@@ -296,7 +296,7 @@
             etaRestriction: false,
             welcome: true,
             opLink: null,
-            rulesLink: "google.com",
+            rulesLink: null,
             themeLink: null,
             fbLink: null,
             youtubeLink: null,
