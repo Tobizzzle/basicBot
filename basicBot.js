@@ -3092,7 +3092,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me The commands for the fishing game are: !fish - casts a new line. More coming soon!');
+                        API.sendChat('/me The commands for the fishing game are not yet ready ".");
                     }
                 }
             },
