@@ -3084,15 +3084,15 @@
                     }
                 }
             },
-            fishCommand: {
-                command: 'fish',
+            fishhelpCommand: {
+                command: 'fish help',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me Someone wants to go fishing!');
+                        API.sendChat('/me The commands for the fishing game are: !fish - casts a new line. More coming soon!');
                     }
                 }
             },
