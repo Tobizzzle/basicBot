@@ -258,7 +258,7 @@
             autowoot: true,
             autoskip: false,
             smartSkip: true,
-            cmdDeletion: true,
+            cmdDeletion: false,
             maximumAfk: 90,
             afkRemoval: true,
             maximumDc: 30,
