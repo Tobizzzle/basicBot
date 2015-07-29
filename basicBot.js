@@ -236,9 +236,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.0.1",
+        version: "2.0.2",
         status: false,
-        name: "Propaganda Bot",
+        name: "Propaganda",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,11 +248,11 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Propaganda Bot",
+            botName: "Propaganda",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 10, // 1-200
+            startupCap: 15, // 1-200
             startupVolume: 100, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
@@ -291,7 +291,7 @@
             afkRankCheck: "ambassador",
             motdEnabled: true,
             motdInterval: 5,
-            motd: "Dope is a room to bring you great music of all genres.",
+            motd: "Dope Boyz is a room to bring you great music of all genres. Wait, didn't I say that already?",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
