@@ -236,9 +236,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.0",
+        version: "2.0.1",
         status: false,
-        name: "dopeBot",
+        name: "Propaganda Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,11 +248,11 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "dopeBot",
+            botName: "Propaganda Bot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 25, // 1-200
+            startupCap: 10, // 1-200
             startupVolume: 100, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
@@ -279,19 +279,19 @@
             usercommandsEnabled: true,
             skipPosition: 3,
             skipReasons: [
-                ["theme", "This song does not fit the room theme."],
-                ["op", "This song is on the OP list."],
-                ["history", "This song is in the history."],
-                ["mix", "You played a mix, which is against the rules."],
-                ["sound", "The song you played had bad sound quality or no sound."],
-                ["nsfw", "The song you contained was NSFW (image or sound)."],
-                ["unavailable", "The song you played was not available for some users."]
+                ["theme", "Sorry, this song does not fit the room theme."],
+                ["op", "Sorry, this song is overplayed."],
+                ["history", "Sorry, this song is in the history."],
+                ["mix", "Sorry, you played a mix, which is against the rules."],
+                ["sound", "Sorry, the song you played had bad sound quality or no sound."],
+                ["nsfw", "Sorry, the song you contained was NSFW (image or sound)."],
+                ["unavailable", "Sorry, the song you played was not available for some users."]
             ],
             afkpositionCheck: 50,
             afkRankCheck: "ambassador",
             motdEnabled: true,
             motdInterval: 5,
-            motd: "dope boyz is a private room to bring you great music of all genres.",
+            motd: "Dope is a room to bring you great music of all genres.",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -3092,7 +3092,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me You cast your line and caught a Goldfish!');
+                        API.sendChat('/me You cast your line and caught a Goldfish! Use !fish to catch another.');
                     }
                 }
             },
