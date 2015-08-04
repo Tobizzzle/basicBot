@@ -3072,19 +3072,20 @@
                 }
             },
 
-            sourceCommand: {
-                command: 'source',
+            ggCommand: {
+                command: 'gg',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me This bot was created by ' + botCreator + ', but is now maintained by ' + botMaintainer + ".");
+                        API.sendChat('/me Damn lol gg.');
                     }
                 }
             },
-                        ripCommand: {
+            
+            ripCommand: {
                 command: 'rip',
                 rank: 'user',
                 type: 'exact',
@@ -3096,6 +3097,7 @@
                     }
                 }
             },
+            
             fishCommand: {
                 command: 'fish',
                 rank: 'user',
@@ -3108,6 +3110,7 @@
                     }
                 }
             },
+            
             statusCommand: {
                 command: 'status',
                 rank: 'bouncer',
