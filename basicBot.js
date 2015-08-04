@@ -1,10 +1,3 @@
-/**
- *Copyright 2014 Yemasthui
- *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
- *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
- */
-
-
 (function () {
 
     /*window.onerror = function() {
@@ -236,9 +229,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.1.2",
+        version: "2.2",
         status: false,
-        name: "propaBot",
+        name: "Propaganda Bot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,11 +241,11 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "propaBot",
+            botName: "Propaganda Bot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 25, // 1-200
+            startupCap: 20, // 1-200
             startupVolume: 100, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
@@ -3106,7 +3099,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me New in update 2.1.2: Added !gg , !fish, and fixed bugs.');
+                        API.sendChat('/me New in update 2.2 (8/3/15): Added !gg, !fish, and !rip commands, and fixed bugs and some other small stuff..');
                     }
                 }
             },
