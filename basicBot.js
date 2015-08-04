@@ -236,7 +236,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.1",
+        version: "2.1.2",
         status: false,
         name: "propaBot",
         loggedInID: null,
@@ -3094,6 +3094,19 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat('/me Resteroni in pepperoni.');
+                    }
+                }
+            },
+            
+            whatsnewCommand: {
+                command: 'whatsnew',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat('/me New in update 2.1.2: Added !gg , !fish, and fixed bugs.');
                     }
                 }
             },
