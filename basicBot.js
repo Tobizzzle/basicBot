@@ -236,9 +236,9 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.0.3",
+        version: "2.1",
         status: false,
-        name: "Propaganda",
+        name: "propaBot",
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -248,11 +248,11 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Propaganda",
+            botName: "propaBot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 20, // 1-200
+            startupCap: 25, // 1-200
             startupVolume: 100, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
