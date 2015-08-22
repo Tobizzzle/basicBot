@@ -245,13 +245,13 @@
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
-            startupCap: 20, // 1-200
-            startupVolume: 100, // 0-100
+            startupCap: 25, // 1-200
+            startupVolume: 75, // 0-100
             startupEmoji: true, // true or false
             autowoot: true,
             autoskip: false,
             smartSkip: true,
-            cmdDeletion: false,
+            cmdDeletion: true,
             maximumAfk: 90,
             afkRemoval: true,
             maximumDc: 30,
@@ -282,9 +282,9 @@
             ],
             afkpositionCheck: 50,
             afkRankCheck: "ambassador",
-            motdEnabled: true,
-            motdInterval: 5,
-            motd: "Dope Boyz is a room to bring you great music of all genres. Wait, didn't I say that already?",
+            motdEnabled: false,
+            motdInterval: 2,
+            motd: "Dope",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
