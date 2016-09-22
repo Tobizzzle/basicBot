@@ -241,7 +241,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Propaganda Bot",
+            botName: "Temple Bot",
             language: "english",
             chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
             roomLock: false, // Requires an extension to re-load the script
@@ -278,13 +278,13 @@
                 ["mix", "Sorry, you played a mix, which is against the rules."],
                 ["sound", "Sorry, the song you played had bad sound quality or no sound."],
                 ["nsfw", "Sorry, the song you contained was NSFW (image or sound)."],
-                ["unavailable", "Sorry, the song you played was not available for some users."]
+                ["unavailable", "Sorry, the song you played was not available for some users (weird, right?)."]
             ],
             afkpositionCheck: 50,
             afkRankCheck: "ambassador",
             motdEnabled: false,
             motdInterval: 2,
-            motd: "Dope",
+            motd: "None",
             filterChat: true,
             etaRestriction: false,
             welcome: true,
@@ -3064,19 +3064,6 @@
                     }
                 }
             },
-
-            ggCommand: {
-                command: 'gg',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!basicBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat('/me Damn lol gg.');
-                    }
-                }
-            },
             
             ripCommand: {
                 command: 'rip',
@@ -3099,7 +3086,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me New in update 2.2 (8/3/15): Added !gg, !fish, and !rip commands, and fixed bugs and some other small stuff..');
+                        API.sendChat('/me New in update 1.0 (9/21/15): Wow! The release of the Indie Bot is finally here. Nice!');
                     }
                 }
             },
